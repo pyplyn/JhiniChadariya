@@ -1,0 +1,26 @@
+[14-Jul-2017 13:48:21 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`key` = '' AND status = '1'' at line 1<br />Error No: 1064<br />SELECT * FROM `api` WHERE `username` = '' `key` = '' AND status = '1'' in /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db.php(16): DB\MySQLi->query('SELECT * FROM `...', Array)
+#1 /home/pyplyin/jhiniChadariya.pyplyn.in/catalog/model/account/api.php(4): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelAccountApi->login(NULL, NULL)
+#3 /home/pyplyin/jhiniChadariya.pyplyn.in/system/engine/loader.php(185): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/pyplyin/jhiniChadariya.pyplyn.in/system/engine/proxy.php(25): call_user_func_array(Object(Closure), Array)
+#6 /home/pyplyin/jhiniChadariya.pyplyn.in/catalog/con in /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db/mysqli.php on line 40
+[14-Jul-2017 15:00:11 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: MySQL server has gone away<br />Error No: 2006<br />SELECT *, (SELECT os.name FROM `order_status` os WHERE os.order_status_id = o.order_status_id AND os.language_id = o.language_id) AS order_status FROM `order` o WHERE o.order_id = '1'' in /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db.php(16): DB\MySQLi->query('SELECT *, (SELE...', Array)
+#1 /home/pyplyin/jhiniChadariya.pyplyn.in/catalog/model/checkout/order.php(119): DB->query('SELECT *, (SELE...')
+#2 [internal function]: ModelCheckoutOrder->getOrder('1')
+#3 /home/pyplyin/jhiniChadariya.pyplyn.in/system/engine/loader.php(185): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/pyplyin/jhiniChadariya.pyplyn.in/system/engine/proxy.php(25): call_user_func_array(Object(Closure), Array)
+#6 /home/pyplyin/jhiniChadariya.pyplyn.in/catalog/controller/mail/order.php(359):  in /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db/mysqli.php on line 40
+[14-Jul-2017 15:00:11 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: MySQL server has gone away<br />Error No: 2006<br />REPLACE INTO `session` SET session_id = '6fe8a26e6b6c970a342f5bd870', `data` = '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"INR\"}', expire = '2017-07-14 15:24:11'' in /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db.php(16): DB\MySQLi->query('REPLACE INTO `s...', Array)
+#1 /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/session/db.php(32): DB->query('REPLACE INTO `s...')
+#2 /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/session.php(49): Session\DB->write('6fe8a26e6b6c970...', Array)
+#3 [internal function]: Session->close()
+#4 {main}
+  thrown in /home/pyplyin/jhiniChadariya.pyplyn.in/system/library/db/mysqli.php on line 40
