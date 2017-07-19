@@ -5,6 +5,7 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 	width: 100%;
+	background-color: beige;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -59,7 +60,8 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 /* Fix some bootstrap issues */
 span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	display: inline;
-	color: papayawhip;
+	color: darkslategrey;
+	text-shadow: none;
 }
 
 .nav-tabs {
@@ -118,6 +120,7 @@ div.required .control-label:before {
 #top .btn-link strong {
 	font-size: 14px;
         line-height: 14px;
+				text-shadow: none;
 }
 #top-links {
 	padding-top: 6px;
@@ -137,12 +140,16 @@ div.required .control-label:before {
 	height: 40px;
 	line-height: 20px;
 	padding: 0 10px;
+	background-color:white;
+	border: solid #ddd;
 }
 #search .btn-lg {
+
 	font-size: 15px;
 	line-height: 18px;
-	padding: 10px 35px;
+	padding: 10px 15px;
 	text-shadow: 0 1px 0 #FFF;
+	color: brown;
 }
 /* cart */
 #cart {
