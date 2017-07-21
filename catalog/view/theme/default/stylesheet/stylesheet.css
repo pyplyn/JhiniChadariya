@@ -121,7 +121,7 @@ div.required .control-label:before {
 	font-size: 14px;
         line-height: 14px;
 				text-shadow: none;
-				color:white;
+				color:darkslategrey;
 }
 #top-links {
 	padding-top: 6px;
