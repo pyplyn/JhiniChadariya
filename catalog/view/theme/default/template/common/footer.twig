@@ -1,6 +1,31 @@
 <footer>
   <div class="container">
     <div class="row">
+      <div class="col-md-4 leftcol">
+        <div class="block_aboutus">
+        <h5>Jhinichadariya</h5>
+          <div class="block-content">
+            <p>
+              B 91 Kasturba Nagar
+              <br>
+               Bhopal,(Madhya Pradesh) pin:462023.
+              <br>
+              Mobile : +91-9699710120
+              <br>
+              Email:
+              <a href="mailto:support@jhinichadariya.com">Support@jhinichadariya.Com</a>
+            </p>
+            <ul class="sns-social">
+              <li><a href="http://www.facebook.com/jhinichadariya/" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 rightcol">  
       {% if informations %}
       <div class="col-sm-3">
         <h5>{{ text_information }}</h5>
@@ -38,9 +63,17 @@
         </ul>
       </div>
     </div>
-    <hr>
-    <p>{{ powered }}</p>
+    <div class="col-sm-8">
+      <p class="footerlink">
+         Copyright © 2018 
+        <a title="JhiniChadariya" href="http://www.Jhinichadariya.com"> Jhinichadariya </a>
+        | Designed & Developed by 
+        <a title="Pyplyn" href="http://www.pyplyn.in"> Pyplyn </a>
+      </p>
+    </div>
   </div>
+</div>
+</div>
 </footer>
 {% for script in scripts %}
 <script src="{{ script }}" type="text/javascript"></script>
@@ -53,4 +86,5 @@ Please donate via PayPal to donate@opencart.com
 
 <!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
 
-</body></html>
+</body>
+</html>

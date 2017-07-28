@@ -5,7 +5,7 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 	width: 100%;
-	background-color: lightgoldenrodyellow;
+	background-color: beige;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -752,4 +752,24 @@ h2.price {
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
     background-image: none;
     background-color: #df5c39;
+}
+.col-md-4.leftcol{
+	border-right:1px solid #444444;
+}
+ul.sns-social{
+	border-top: 1px dashed #666666;
+	margin: 16px 0 0;
+	padding: 20px 0;
+	list-style: none;
+
+}
+ul.sns-social > li{
+	display: inline-block;
+	padding-right: 15px;
+
+}
+.footerlink{
+	border-top: 1px dashed #666666;
+	margin-top: 15px;
+	padding-top: 15px;
 }
