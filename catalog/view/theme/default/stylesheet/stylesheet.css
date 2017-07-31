@@ -220,6 +220,9 @@ div.required .control-label:before {
 #menu .dropdown-menu {
 	padding-bottom: 0;
 }
+.navbar-header{
+	background-color: maroon;
+}
 #menu .dropdown-inner {
 	display: table;
 }
@@ -271,9 +274,9 @@ div.required .control-label:before {
 	padding: 2px 18px;
 	float: right;
 	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+	background-image: linear-gradient(to bottom, #FFA500, #FFA500);
 	background-repeat: repeat-x;
-	border-color: #1f90bb #1f90bb #145e7a;
+	border-color: #FFA500;
 }
 #menu .btn-navbar:hover, #menu .btn-navbar:focus, #menu .btn-navbar:active, #menu .btn-navbar.disabled, #menu .btn-navbar[disabled] {
 	color: #ffffff;
